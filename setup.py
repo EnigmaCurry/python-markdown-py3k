@@ -20,9 +20,9 @@ class md_install_scripts(install_scripts):
                 f = file(bat_path, 'w')
                 f.write(bat_str)
                 f.close()
-                print 'Created:', bat_path
-            except Exception, e:
-                print 'ERROR: Unable to create %s: %s' % (bat_path, e)
+                print('Created:', bat_path)
+            except Exception as e:
+                print('ERROR: Unable to create %s: %s' % (bat_path, e))
 
 data = dict(
     name =          'Markdown',
